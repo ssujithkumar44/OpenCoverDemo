@@ -30,3 +30,37 @@ MVC [Yet To Release] \
 Console App [Yet To Release] 
 
 ### Sample Commands for OpenCover and ReportGenerator
+
+#### Open Cover
+OpenCover.Console.exe -target:"C:\Program Files\IIS Express\iisexpress.exe" \
+-targetargs:"-config:\<Your Folder Path of applicationhost.config\>" \
+-filter:+[\*]* \
+-register:user \
+"-searchdirs:\<Your Folder Path for Bin\>;\<Your Folder Path for Bin\>"
+
+Example Code
+```
+OpenCover.Console.exe -target:"C:\Program Files\IIS Express\iisexpress.exe" -targetargs:"-config:C:\MyFolder\Demo\applicationhost_aspx.config" -filter:+[*]* -register:user "-searchdirs:C:\MyFolder\Demo\aspx\bin;C:\MyFolder\Demo\mvc\bin"
+```
+#### Note: 
+Please do use opencover parameter as it is -register:user **NOT LIKE -register:anand**
+
+
+#### ReportGenerator Open Cover
+
+ReportGenerator.exe 
+-reports:"\<Your Folder Path Of OpenCover Result.xml\>" 
+-targetdir:"\<Folder Path To Output Reports\>"
+-sourcedirs:\<Your Folder Path for Bin\>;\<Your Folder Path for Bin\>" 
+"-assemblyfilters:-<Ignore Assemblies>*" 
+"-classfilters:-<Ignore Class filefilters>*" 
+"-filefilters:-<Ignore file path>*"
+
+Example Code
+```
+ReportGenerator.exe -reports:"C:\OpenCover\opencover.4.7.922\results.xml" -targetdir:C:\MyFolder\Demo\zfunctionalCoverageReport "-sourcedirs:C:\MyFolder\Demo\aspx\bin;C:\MyFolder\Demo\mvc\bin" "-assemblyfilters:-Antlr3.Runtime*;-System.Web.UI.dll*" "-classfilters:-__ASP.FastObjectFactory*;-*.BundleConfig;-*.FilterConfig;-*.RouteConfig;-*.MvcApplication;-ASP._Page_Views__ViewStart_cshtml" "-filefilters:-C:\MyFolder\TFS\rmy\POC\OpenCover\aspx\*"
+```
+\
+
+
+
