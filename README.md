@@ -49,12 +49,12 @@ Please do use opencover parameter as it is -register:user **NOT LIKE -register:a
 #### ReportGenerator Open Cover
 
 ReportGenerator.exe 
--reports:"\<Your Folder Path Of OpenCover Result.xml\>" 
--targetdir:"\<Folder Path To Output Reports\>"
--sourcedirs:\<Your Folder Path for Bin\>;\<Your Folder Path for Bin\>" 
-"-assemblyfilters:-\<Ignore Assemblies\>*" 
-"-classfilters:-\<Ignore Class filefilters\>*" 
-"-filefilters:-\<Ignore file path\>*"
+-reports:"\<Your Folder Path Of OpenCover Result.xml\>" \
+-targetdir:"\<Folder Path To Output Reports\>" \
+-sourcedirs:\<Your Folder Path for Bin\>;\<Your Folder Path for Bin\>" \
+"-assemblyfilters:-\<Ignore Assemblies\>*"  \
+"-classfilters:-\<Ignore Class filefilters\>*" \
+"-filefilters:-\<Ignore file path\>*" \
 
 Example Code
 ```
