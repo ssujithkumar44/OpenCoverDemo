@@ -54,7 +54,7 @@ ReportGenerator.exe
 -sourcedirs:\<Your Folder Path for Bin\>;\<Your Folder Path for Bin\>" \
 "-assemblyfilters:-\<Ignore Assemblies\>*"  \
 "-classfilters:-\<Ignore Class filefilters\>*" \
-"-filefilters:-\<Ignore file path\>*" \
+"-filefilters:-\<Ignore file path\>*"
 
 Example Code
 ```
