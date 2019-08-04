@@ -1,4 +1,4 @@
-# OpenCoverDemo
+# OpenCoverDemo - Functional Test Coverage
 
 ### OpenCover
 OpenCover can be used for functional test coverage also. 
