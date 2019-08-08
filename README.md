@@ -61,7 +61,7 @@ Example Code
 ReportGenerator.exe -reports:"C:\OpenCover\opencover.4.7.922\results.xml" -targetdir:C:\MyFolder\Demo\zfunctionalCoverageReport "-sourcedirs:C:\MyFolder\Demo\aspx\bin;C:\MyFolder\Demo\mvc\bin" "-assemblyfilters:-Antlr3.Runtime*;-System.Web.UI.dll*" "-classfilters:-__ASP.FastObjectFactory*;-*.BundleConfig;-*.FilterConfig;-*.RouteConfig;-*.MvcApplication;-ASP._Page_Views__ViewStart_cshtml" "-filefilters:-C:\MyFolder\TFS\rmy\POC\OpenCover\aspx\*"
 ```
 \
-forked by sujith
+forked by blessy
 
 
 
